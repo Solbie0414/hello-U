@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hello U</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      background-color: white;
+      width: 100%;
+      z-index: 10;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 20px 0;
+    }
+
+    .header-inner {
+      position: relative;
+      max-width: 1200px;
+      margin: 0 auto;
+      height: 60px;
+    }
+
+    .logo {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .nav-center {
+      display: flex;
+      justify-content: center;
+      height: 100%;
+      align-items: center;
+    }
+
+    .nav-menu {
+      display: flex;
+      gap: 40px;
+      list-style: none;
+    }
+
+    .nav-menu a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      font-size: 32px;
+      padding: 8px 12px;
+    }
+
+    .nav-menu a:hover {
+      color: #0077cc;
+    }
+
+    .section-title {
+      font-size: 48px;
+      font-weight: 700;
+      color: #111;
+      margin-bottom: 20px;
+    }
+
+    .section-desc {
+      font-size: 28px;
+      font-weight: 500;
+      color: #333;
+      line-height: 1.8;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 네비게이션 -->
+  <header>
+    <div class="header-inner">
+      
+      <nav class="nav-center">
+        <ul class="nav-menu">
+          <li><a href="visa.html">비자 (VISA)</a></li>
+          <li><a href="hospital.html">병원</a></li>
+          <li><a href="food.html">맛집</a></li>
+          <li><a href="#">U</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 비자 섹션 -->
+<section id="visa" style="padding: 0;">
+  <div class="visa-section" style="
+    position: relative;
+    height: 740px;
+    background-image: url('./img/비자1.png');
+    background-size: cover;
+    background-position: center;
+  ">
+    <div class="visa-text" style="
+      position: absolute;
+      top: 35%;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      color: #000;
+      background-color: rgba(255, 255, 255, 0.5);
+      padding: 24px 40px;
+      border-radius: 10px;
+    ">
+      <h1 style="font-size: 60px; font-weight: bold; margin: 0;">비자 VISA</h1>
+      <p style="margin: 16px 0; font-size: 40px;">비자 신청 방법에 대한 설명입니다</p>
+      <a href="visa.html" style="
+        display: inline-block;
+        margin-top: 24px;
+        padding: 16px 32px;
+        background-color: #000;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 8px;
+        font-size: 24px;
+        font-weight: bold;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        transition: all 0.3s ease;
+      ">자세히 보기</a>
+    </div>
+  </div>
+</section>
+
+  <!-- 병원 섹션 -->
+  <section id="hospital" style="background-color: #f7f7f7; padding: 100px 0;">
+  <div style="max-width: 1100px; margin: auto; text-align: center;">
+    <h2 class="section-title" style="font-size: 64px; font-weight: 800; margin-bottom: 30px;">
+      U of U Health Center
+    
+    </h2>
+    <p class="section-desc" style="font-size: 36px; font-weight: 500; line-height: 1.6; color: #333;">
+      Immunization / Vaccine<br>
+      International Student check in<br>
+      Titer<br>
+      Tuberculosis test
+    </p>
+
+    <div style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; margin-top: 50px;">
+      <a href="hospital.html">
+        <img src="img/청진기병원1.png" alt="Health Center" style="width: 340px; border-radius: 16px;">
+      </a>
+      <a href="hospital.html">
+        <img src="img/병원2.png" alt="Lab Room" style="width: 340px; border-radius: 16px;">
+      </a>
+    </div>
+  </div>
+</section>
+
+  <!-- 맛집 섹션 -->
+  <section id="food" style="background: #fff;">
+  <div class="container" style="max-width: 1200px; margin: auto; padding: 60px 20px; text-align: center;">
+    <h2 class="section-title">맛집 FOOD</h2>
+    <p class="section-desc">맛있는 게 최고</p>
+
+    <!-- 여기 ↓↓↓ 요거 하나만! -->
+    <div class="food-item" style="max-width: 600px; margin: auto;">
+      <a href="food.html" style="text-decoration: none; color: inherit;">
+        <img src="img/초밥1.png" alt="맛집 대표 이미지" style="width: 100%; border-radius: 10px;">
+        <p style="margin-top: 24px; font-size: 35px; font-weight: bold;">맛있는 게 최고!</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+  <!-- 푸터 -->
+  <footer style="text-align: center; background-color: #f0f0f0; padding: 20px; font-size: 24px; margin-top: 80px;">
+    Question: <a href="mailto:u13503087@utah.edu">u13503087@utah.edu</a>
+  </footer>
+
+</body>
+</html>
